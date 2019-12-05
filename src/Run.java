@@ -9,6 +9,7 @@ public class Run {
 
     private static void makeBankOperation(Konto... accountsArray) {
         for (int i = 0; i < 10; i++) {
+
             for (Konto account : accountsArray) {
                 System.out.println("Stan: " + String.format("%,.2f", account.accountValue()));
                 System.out.println("wpłacam 100");
@@ -21,7 +22,6 @@ public class Run {
             }
         }
         for (Konto konto : accountsArray) {
-
             System.out.println("Na koniec mam: " + konto.toPrint());
         }
     }
