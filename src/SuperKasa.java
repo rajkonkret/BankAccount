@@ -9,7 +9,7 @@ public class SuperKasa implements Konto {
 
     @Override
     public String toPrint() {
-        return "SuperKasa " + String.format("%,.2f", accountMoney);
+        return "SuperKasa " + String.format("%,.2f", accountMoney) + " PLN";
     }
 
     @Override

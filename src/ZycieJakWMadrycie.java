@@ -3,7 +3,7 @@ public class ZycieJakWMadrycie implements Konto {
 
     @Override
     public String toPrint() {
-        return "Zycie jak w Madrycie " + String.format("%,.2f", accountMoney);
+        return "Zycie jak w Madrycie " + String.format("%,.2f", accountMoney) + " PLN";
     }
 
     @Override
