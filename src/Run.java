@@ -12,7 +12,7 @@ public class Run {
 
             for (Konto account : accountsArray) {
                 System.out.println("Stan: " + String.format("%,.2f", account.accountValue()));
-                System.out.println("wpłacam 1000,00");
+                System.out.println("wpłacam 100,00");
                 account.addToAccount(100);
                 System.out.println("Stan: " + String.format("%,.2f", account.accountValue()));
                 System.out.println("wypłacam 50,00");
