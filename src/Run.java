@@ -3,6 +3,7 @@ public class Run {
         SuperKasa superKasa = new SuperKasa(2);
         ZycieJakWMadrycie zycieJakWMadrycie = new ZycieJakWMadrycie();
         KontoOszczednosciowe kontoOszczednosciowe = new KontoOszczednosciowe();
+        ExtraKonto extraKonto = new ExtraKonto();
         //Konto[] konto = {superKasa, zycieJakWMadrycie};
         makeBankOperation(kontoOszczednosciowe);
     }
