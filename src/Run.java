@@ -2,9 +2,9 @@ public class Run {
     public static void main(String[] args) {
         SuperKasa superKasa = new SuperKasa(2);
         ZycieJakWMadrycie zycieJakWMadrycie = new ZycieJakWMadrycie();
-
+        KontoOszczednosciowe kontoOszczednosciowe = new KontoOszczednosciowe();
         //Konto[] konto = {superKasa, zycieJakWMadrycie};
-        makeBankOperation(superKasa, zycieJakWMadrycie);
+        makeBankOperation(kontoOszczednosciowe);
     }
 
     private static void makeBankOperation(Konto... accountsArray) {

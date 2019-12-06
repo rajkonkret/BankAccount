@@ -18,6 +18,6 @@ public class KontoOszczednosciowe implements Konto {
 
     @Override
     public String toPrint() {
-        return null;
+        return "Konto Oszczędnościowe: " + String.format("%,.2f", moneyInBank) + " PLN";
     }
 }

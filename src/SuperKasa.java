@@ -26,7 +26,7 @@ public class SuperKasa implements Konto {
     }
 
     @Override
-    public double accountValue()
+    public double accountValue(){
     return accountMoney;
     }
 }
