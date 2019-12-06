@@ -1,11 +1,6 @@
 public class Run {
     public static void main(String[] args) {
-        SuperKasa superKasa = new SuperKasa(2);
-        ZycieJakWMadrycie zycieJakWMadrycie = new ZycieJakWMadrycie();
-        KontoOszczednosciowe kontoOszczednosciowe = new KontoOszczednosciowe();
-        ExtraKonto extraKonto = new ExtraKonto();
-        //Konto[] konto = {superKasa, zycieJakWMadrycie};
-        makeBankOperation(kontoOszczednosciowe);
+        makeBankOperation(Initialization());
     }
 
     private static void makeBankOperation(Konto... accountsArray) {
@@ -25,5 +20,14 @@ public class Run {
         for (Konto konto : accountsArray) {
             System.out.println("Na koniec mam: " + konto.toPrint());
         }
+    }
+
+    private static Konto[] Initialization() {
+
+        SuperKasa superKasa = new SuperKasa(2);
+        ZycieJakWMadrycie zycieJakWMadrycie = new ZycieJakWMadrycie();
+        KontoOszczednosciowe kontoOszczednosciowe = new KontoOszczednosciowe();
+        ExtraKonto extraKonto = new ExtraKonto();
+        return new Konto[]{superKasa, zycieJakWMadrycie, kontoOszczednosciowe, extraKonto};
     }
 }
