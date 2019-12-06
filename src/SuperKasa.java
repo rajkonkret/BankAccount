@@ -4,6 +4,7 @@ public class SuperKasa implements Konto {
     private int chargeOut;
 
     public SuperKasa(int chargeAdd) {
+
         this.chargeAdd = chargeAdd;
     }
 
@@ -25,7 +26,7 @@ public class SuperKasa implements Konto {
     }
 
     @Override
-    public double accountValue() {
-        return accountMoney;
+    public double accountValue()
+    return accountMoney;
     }
 }
