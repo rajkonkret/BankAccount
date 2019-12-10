@@ -3,10 +3,10 @@ public class Run {
         makeBankOperation(Initialization());
     }
 
-    private static void makeBankOperation(Konto... accountsArray) {
+    private static void makeBankOperation(Account... accountsArray) {
         for (int i = 0; i < 10; i++) {
 
-            for (Konto account : accountsArray) {
+            for (Account account : accountsArray) {
                 System.out.println("Stan: " + String.format("%,.2f", account.accountValue()));
                 System.out.println("wpłacam 100,00");
                 account.addToAccount(100);
@@ -17,17 +17,17 @@ public class Run {
 
             }
         }
-        for (Konto konto : accountsArray) {
+        for (Account konto : accountsArray) {
             System.out.println("Na koniec mam: " + konto.toPrint());
         }
     }
 
-    private static Konto[] Initialization() {
+    private static Account[] Initialization() {
 
-        SuperKasa superKasa = new SuperKasa(2);
-        ZycieJakWMadrycie zycieJakWMadrycie = new ZycieJakWMadrycie();
-        KontoOszczednosciowe kontoOszczednosciowe = new KontoOszczednosciowe();
-        ExtraKonto extraKonto = new ExtraKonto();
-        return new Konto[]{superKasa, zycieJakWMadrycie, kontoOszczednosciowe, extraKonto};
+        SuperCash superKasa = new SuperCash(2);
+        LiveInMadrid zycieJakWMadrycie = new LiveInMadrid();
+        SaverAccount kontoOszczednosciowe = new SaverAccount();
+        ExtraAccount extraKonto = new ExtraAccount();
+        return new Account[]{superKasa, zycieJakWMadrycie, kontoOszczednosciowe, extraKonto};
     }
 }

@@ -1,10 +1,8 @@
-import org.omg.CORBA.CODESET_INCOMPATIBLE;
-
-public class ExtraKonto implements Konto {
+public class ExtraAccount implements Account {
     private double accountValue;
     private int countToFive;
 
-    public ExtraKonto() {
+    public ExtraAccount() {
         this.countToFive = 0;
     }
 

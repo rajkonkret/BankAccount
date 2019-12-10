@@ -1,8 +1,9 @@
-public class KontoOszczednosciowe implements Konto {
+public class SaverAccount implements Account {
     private double moneyInBank;
 
     @Override
     public void addToAccount(double money) {
+
         this.moneyInBank = this.moneyInBank + money*1.05;
     }
 

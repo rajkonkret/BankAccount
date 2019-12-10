@@ -1,4 +1,4 @@
-public class ZycieJakWMadrycie implements Konto {
+public class LiveInMadrid implements Account {
     private double accountMoney;
 
     @Override

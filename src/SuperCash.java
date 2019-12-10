@@ -1,9 +1,9 @@
-public class SuperKasa implements Konto {
+public class SuperCash implements Account {
     private double accountMoney;
     private int chargeAdd;
     private int chargeOut;
 
-    public SuperKasa(int chargeAdd) {
+    public SuperCash(int chargeAdd) {
 
         this.chargeAdd = chargeAdd;
     }
